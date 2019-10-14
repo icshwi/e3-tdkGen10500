@@ -61,7 +61,7 @@ TEMPLATES += $(wildcard $(APPDB)/*.template)
 
 
 
-##SOURCES += $(APPSRC)/tdkGen10500.c
+SOURCES += $(APPSRC)/tdkGen10500.c
 ##SOURCES += $(APPSRC)/dbSubExample.c
 #SOURCES += $(APPSRC)/exampleHello.c
 ##SOURCES += $(APPSRC)/initTrace.c
