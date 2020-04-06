@@ -1,0 +1,8 @@
+#! Remember to "require stream" in upstream startup script!
+
+drvAsynIPPortConfigure($(connection_name), "$(IP_addr):8003")
+
+epicsEnvSet(STREAM_PROTOCOL_PATH, "$(tdkGen10500_DB)")
+
+#dbLoadRecords("tdkGen10500.template", "proto_file=tdkGen10500.proto, Ch_name=$(Ch_name), P=$(P), R=$(R)")
+dbLoadRecords("tdkGen10500.template", "proto_file=tdkGen10500.proto, connection_name=$(connection_name), secsub=$(secsub), disdevidx=$(disdevidx)")
